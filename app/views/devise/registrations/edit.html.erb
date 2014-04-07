@@ -1,7 +1,10 @@
+<!--create edit form with fields name, email, password etc-->
+
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, :class => 'form-vertical' }) do |f| %>
   <%= f.error_notification %>
   <%= display_base_errors resource %>
+ <!-- <%= f.input :username, :autofocus => true %>-->
   <%= f.input :name, :autofocus => true %>
   <%= f.input :email, :required => true %>
   <%= f.input :password, :autocomplete => "off", :hint => "leave it blank if you don't want to change it", :required => false %>
@@ -12,3 +15,4 @@
 <h3>Cancel my account</h3>
 <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete %>.</p>
 <%= link_to "Back", :back %>
+ <!--delete account if you are unhappy using method delete and send back to previous link-->

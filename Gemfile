@@ -1,11 +1,14 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '3.2.14'
-gem 'sqlite3'
+gem 'rails_12factor', group: :production
+# gem 'sqlite3'
+gem 'pg'
+gem 'letter_opener'
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
 end
 gem 'jquery-rails'
 gem 'bootstrap-sass'
@@ -26,7 +29,10 @@ end
 group :test do
   gem 'capybara'
   gem 'cucumber-rails', :require=>false
-  gem 'database_cleaner', '1.0.1'
+  gem 'database_cleaner'
   gem 'email_spec'
   gem 'launchy'
 end
+gem 'twitter-bootstrap-rails'
+gem 'nifty-generators', :group => :development
+

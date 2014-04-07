@@ -1,3 +1,41 @@
 @import "bootstrap";
 body { padding-top: 60px; }
 @import "bootstrap-responsive";
+
+.row {
+border-color: black;
+  border-right-color: black;
+  border-style: 1px;
+  margin:20px;
+}
+h6{
+
+  color: #510000;
+}
+
+
+footer{
+  text-align: center;
+
+  background-color: black;
+  font-size:1em;
+  color:white;
+  height:25px;
+position:fixed;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+}
+image{
+
+
+}
+.twrap {
+  float: right;
+  margin:10px;
+}
+.lwrap .twrap {
+  float: left;
+  margin:10px;
+}
